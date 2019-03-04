@@ -30,3 +30,27 @@ puts "Enter your second number"
         puts "#{first} / #{second} =#{divide(first , second)}"
         puts "#{first} % #{second} = #{mod(first , second)}"
                                 
+        20.times {print "-"}
+        puts
+        puts "Selection for methods: \n what do you want to do?"
+              puts "Enter 1 to multiply \t"
+              puts "Enter 2 to add \t"
+              puts "Enter 3 to subtract \t"
+              puts "Enter 4 to divide \t"
+              puts "Enter 5 to mod \t"
+        user_entry = gets.chomp
+        user_entry.to_i
+        puts "You have selected #{user_entry}"
+        if user_entry == "1"
+                    puts "#{first} * #{second} = #{multiply(first ,second)}"
+        elsif user_entry == "2"
+                    puts "#{first} + #{second} = #{add(first , second)}"
+        elsif user_entry == "3"
+                    puts "#{first} - #{second} = #{subtract(first , second)}"
+        elsif user_entry == "4"
+                    puts "#{first} / #{second} =#{divide(first , second)}"
+        elsif user_entry == "5"
+                    puts "#{first} % #{second} = #{mod(first , second)}"
+        else 
+                     puts "Enter a valid option"
+        end        
