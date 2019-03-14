@@ -1,0 +1,17 @@
+RUBY 
+    EXCEPTIONAL-HANDLNGI
+In Ruby, exception handling is a process which describes a way to handle the error raised in a program
+
+    error : unwanted or unexpected events(generally occurs at runtime), disrupts normal flow of programs and it executions
+Syntax:
+
+begin
+    raise
+          # block where exception raise
+     rescue
+          # block where exception rescue
+end
+
+rescue block as thee name suggests, is used to handles these types of errors 
+ ruby also provides a separate class for an exception that is known as an Exception class
+    the class contains different types of methods.
