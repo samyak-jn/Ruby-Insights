@@ -10,3 +10,19 @@ def multiply (one, two)
 end 
 puts multiply(5, 3) 
 # => 5 multiplied by 3 equals 15
+
+my_name = " samyak" 
+puts my_name.lstrip.capitalize  
+p my_name
+my_name.lstrip! 
+my_name[0] = 'R'  
+puts my_name 
+cur_weather = %Q{It's a hot day outside 
+			     Grab your umbrellas…} 
+
+cur_weather.lines do |line| 
+  line.sub! 'hot', 'rainy' # substitute 'hot' with 'rainy' 
+  puts "#{line.strip}" 
+end 
+# => It's a rainy day outside 
+# => Grab your umbrellas...
