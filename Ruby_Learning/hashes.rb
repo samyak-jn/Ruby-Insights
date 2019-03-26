@@ -27,3 +27,15 @@ adjust_colors # => foreground: red
 adjust_colors ({ :foreground => "green" }) # => foreground: green 
 adjust_colors background: "yella" # => background: yella 
 adjust_colors :background => "magenta" # => background: magenta
+
+
+
+#updating with hashes
+word_frequency = Hash.new(0) 
+
+sentence = "Chicka chicka boom boom" 
+sentence.split.each do |word| 
+  word_frequency[word.downcase] += 1 
+end 
+
+p word_frequency # => {"chicka" => 2, "boom" => 2}
